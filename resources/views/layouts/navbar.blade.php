@@ -17,25 +17,29 @@
 
             {{-- Menu Desktop --}}
             <div class="hidden md:flex items-center space-x-1">
-                <a href="{{ url('/') }}"
+                <a href="{{ route('beranda') }}"
                    class="px-4 py-2 rounded-md text-sm font-medium {{ request()->is('/') ? 'bg-primary-700 text-white' : 'text-gray-300 hover:bg-primary-700 hover:text-white' }} transition">
                     Beranda
                 </a>
-                <a href="{{ url('/profile') }}"
+                <a href="{{ route('profile') }}"
                    class="px-4 py-2 rounded-md text-sm font-medium {{ request()->is('/profile*') ? 'bg-primary-700 text-white' : 'text-gray-300 hover:bg-primary-700 hover:text-white' }} transition">
                     Profile
                 </a>
-                <a href="{{ url('/data-guru') }}"
+                <a href="{{ route('data-guru') }}"
                    class="px-4 py-2 rounded-md text-sm font-medium {{ request()->is('/data-guru*') ? 'bg-primary-700 text-white' : 'text-gray-300 hover:bg-primary-700 hover:text-white' }} transition">
                     Data Guru
                 </a>
-                <a href="{{ url('/mata-pelajaran') }}"
+                <a href="{{ route('mata-pelajaran') }}"
                    class="px-4 py-2 rounded-md text-sm font-medium {{ request()->is('/mata-pelajaran*') ? 'bg-primary-700 text-white' : 'text-gray-300 hover:bg-primary-700 hover:text-white' }} transition">
                     Mata pelajaran
                 </a>
-                <a href="{{ url('/contact') }}"
+                <a href="{{ route( 'contact') }}"
                    class="px-4 py-2 rounded-md text-sm font-medium {{ request()->is('/contact*') ? 'bg-primary-700 text-white' : 'text-gray-300 hover:bg-primary-700 hover:text-white' }} transition">
                     Kontak
+                </a>
+                <a href="{{ route( 'fasilitas') }}"
+                   class="px-4 py-2 rounded-md text-sm font-medium {{ request()->is('/fasilitas*') ? 'bg-primary-700 text-white' : 'text-gray-300 hover:bg-primary-700 hover:text-white' }} transition">
+                    fasilitas
                 </a>
             </div>
 
